@@ -1,8 +1,5 @@
 vim.g.mapleader = " "
-
+vim.o.background = "light"
 local vim = vim
 
-vim.colorscheme = "oceanic-next"
-
 require("lazynvim-init")
-require("keybindings")

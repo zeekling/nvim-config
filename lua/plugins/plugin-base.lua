@@ -121,9 +121,6 @@ return {
     lazy = true,
   },
   {
-    "mhartington/oceanic-next",
-  },
-  {
     'nvim-lualine/lualine.nvim',
     config = function()
        require('lualine').setup()
@@ -165,5 +162,6 @@ return {
   {
     "azabiong/vim-highlighter",
   },
+  {"stevearc/dressing.nvim", opts = {}}
 
 }

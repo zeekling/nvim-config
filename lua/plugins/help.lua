@@ -15,6 +15,11 @@ return {
 	              n={"<cmd>BufferLineCycleNext<cr>", "Go to next buffer"},
 	              d={"<cmd>bd<cr>", "delete current buffer"}
 	          },
+                 d = {
+                   name="dirTree",
+                   s={"<cmd>NvimTreeToggle<cr>", "show dir tree on left"},
+                   c={"<cmd>NvimTreeClose<cr>", "hidden dir tree on left"}
+	        },
 	         m = {
                    name="Markdown",
 	              k={
@@ -23,11 +28,9 @@ return {
 		        c={"<cmd>MarkdownPreviewStop<cr>", "MarkdownPreviewStop"}
 	              }
 	         },
-                 d = {
-                   name="dirTree",
-                   s={"<cmd>NvimTreeToggle<cr>", "show dir tree on left"},
-                   c={"<cmd>NvimTreeClose<cr>", "hidden dir tree on left"}
-	        }
+		 s = {
+                   name="Search"
+		 }
            }
         }, {silent = true, noremap = true})
         wk.setup()
