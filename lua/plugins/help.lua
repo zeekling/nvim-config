@@ -20,6 +20,12 @@ return {
                    s={"<cmd>NvimTreeToggle<cr>", "show dir tree on left"},
                    c={"<cmd>NvimTreeClose<cr>", "hidden dir tree on left"}
 	        },
+		l = {
+		  name="Lazy",
+		  s={"<cmd>Lazy show<cr>", "Lazy show"},
+		  i={"<cmd>Lazy install<cr>", "Lazy install"},
+		  u={"<cmd>Lazy update<cr>", "Lazy update"},
+		},
 	         m = {
                    name="Markdown",
 	              k={
@@ -28,9 +34,13 @@ return {
 		        c={"<cmd>MarkdownPreviewStop<cr>", "MarkdownPreviewStop"}
 	              }
 	         },
+		 v = {
+                    name = "version",
+		    v={"<cmd>version<cr>", "neovim version"},
+		 },
 		 s = {
                    name="Search"
-		 }
+		 },
            }
         }, {silent = true, noremap = true})
         wk.setup()
