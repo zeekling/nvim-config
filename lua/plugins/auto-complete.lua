@@ -10,7 +10,6 @@ return {
         },
         config = function()
             local cmp = require("cmp")
- 
             cmp.setup({
                 snippet = {
                     expand = function(args)
@@ -36,6 +35,14 @@ return {
     }, 
     {
       "neovim/nvim-lspconfig"
+    },
+    {
+     "nvim-treesitter/nvim-treesitter",
+     config = function()
+	  require('nvim-treesitter.configs').setup {
+            ensure_installed = { 'c', 'cpp', 'cmake', 'bash', 'go', 'lua', 'python', 'java', 'git_config', 'git_rebase', 'gitattributes', 'gitcommit', 'gitignore', 'groovy', 'json', 'sql', 'vim', 'xml', 'tcl'},
+	 }
+    end,
     }
 }
 

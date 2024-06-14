@@ -1,7 +1,6 @@
 return {
   {
     "nathom/filetype.nvim",
-    lazy = true,
     event = "User FileOpened",
     config = function()
         require("filetype").setup({
@@ -16,7 +15,6 @@ return {
   {
     "HiPhish/nvim-ts-rainbow2",
     -- Bracket pair rainbow colorize
-    lazy = true,
     event = { "User FileOpened" },
   },
   {
@@ -40,7 +38,6 @@ return {
   },
   {
     "windwp/nvim-spectre",
-    lazy = true,
     cmd = { "Spectre" },
     config = function()
         require("spectre").setup()
@@ -49,7 +46,6 @@ return {
   {
     "andymass/vim-matchup",
     -- Highlight, jump between pairs like if..else
-    lazy = true,
     event = { "User FileOpened" },
     config = function()
         vim.g.matchup_matchparen_offscreen = { method = "popup" }
@@ -84,7 +80,6 @@ return {
   {
     "folke/noice.nvim",
     enabled = ENABLE_NOICE,
-    lazy = true,
     event = { "BufRead", "BufNewFile" },
     dependencies = { "rcarriga/nvim-notify", "MunifTanjim/nui.nvim" },
     config = function()
@@ -115,10 +110,9 @@ return {
         })
     end,
   },
-  { "lukas-reineke/cmp-under-comparator", lazy = true },
+  { "lukas-reineke/cmp-under-comparator" },
   {
     "ray-x/cmp-treesitter",
-    lazy = true,
   },
   {
     'nvim-lualine/lualine.nvim',
@@ -138,7 +132,6 @@ return {
   },
   { 
    "tiagovla/scope.nvim",
-   lazy = false
   },
   {
         "akinsho/bufferline.nvim",
@@ -162,6 +155,7 @@ return {
   {
     "azabiong/vim-highlighter",
   },
-  {"stevearc/dressing.nvim", opts = {}}
+  {"stevearc/dressing.nvim", 
+  opts = {}}
 
 }
