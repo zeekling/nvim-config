@@ -35,6 +35,9 @@ return {
 			java_test = {
 				enable = true,
 			},
+			java_debug_adapter = {
+				enable = true,
+			},
 		})
 		require("lspconfig").jdtls.setup({})
 	end,

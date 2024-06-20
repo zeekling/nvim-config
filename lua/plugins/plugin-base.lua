@@ -174,4 +174,26 @@ return {
 			})
 		end,
 	},
+	{
+		"folke/trouble.nvim",
+		opts = {},
+		cmd = "Trouble",
+	},
+	{
+		"stevearc/aerial.nvim",
+		opts = {},
+		config = function()
+			require("aerial").setup({
+				layout = {
+					max_width = { 40, 0.2 },
+					min_width = 20,
+				},
+			})
+		end,
+		-- Optional dependencies
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter",
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
 }

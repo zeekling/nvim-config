@@ -23,8 +23,7 @@ return {
 					f = {
 						name = "Search,Format",
 						s = {
-							name = "search",
-
+							name = "Search",
 							f = { "<cmd>Telescope find_files<cr>", "Search file by name" },
 							g = { "<cmd>Telescope live_grep<cr>", "Grep in files" },
 							b = { "<cmd>Telescope buffers<cr>", "Grep in buffer" },
@@ -44,6 +43,26 @@ return {
 							s = { "<cmd>MarkdownPreview<cr>", "MarkdownPreview" },
 							c = { "<cmd>MarkdownPreviewStop<cr>", "MarkdownPreviewStop" },
 						},
+					},
+					s = {
+						name = "Symbol",
+						t = { "<cmd>AerialToggle right<cr>", "Open or close the Symbol tree" },
+					},
+					j = {
+						name = "Java",
+						t = {
+							name = "Test",
+							d = {
+								name = "Debug",
+								c = { "<cmd>JavaTestDebugCurrentClass<cr>", "Run current Class" },
+								m = { "<cmd>JavaTestDebugCurrentMethod<cr>", "Run current Method" },
+							},
+							c = { "<cmd>JavaTestRunCurrentClass<cr>", "Run current Class" },
+							m = { "<cmd>JavaTestRunCurrentMethod<cr>", "Run current Method" },
+							v = { "<cmd>JavaTestViewLastReport<cr>", "View Last Report" },
+						},
+						m = {"<cmd>JavaRunnerRunMain<cr>", "Run main Method"},
+						p = {"<cmd>JavaProfile<cr>", "Run Java Profile"},
 					},
 					v = {
 						name = "version",
