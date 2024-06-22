@@ -15,23 +15,30 @@ return {
 						n = { "<cmd>BufferLineCycleNext<cr>", "Go to next buffer" },
 						d = { "<cmd>bd<cr>", "delete current buffer" },
 					},
+					c = {
+						name = "Code",
+						f = { "<cmd>Format<cr>", "Format Code" },
+						g = {
+							name = "Go to",
+							d = { "<cmd>Lspsaga goto_definition<cr>", "Go to definition" },
+							f = { "<cmd>Lspsaga finder<cr>", "Find usage or implements" },
+							i = { "<cmd>Lspsaga finder imp<cr>", "Find implements" },
+							r = { "<cmd>Lspsaga rename<cr>", "rename" },
+						},
+					},
 					d = {
 						name = "dirTree",
 						t = { "<cmd>NvimTreeToggle<cr>", "show or hidden dir tree on left" },
 					},
 					f = {
-						name = "Search,Format Code",
-						s = {
-							name = "Search",
-							f = { "<cmd>Telescope find_files<cr>", "Search files" },
-							g = { "<cmd>Telescope live_grep<cr>", "Find string in files" },
-							b = { "<cmd>Telescope buffers<cr>", "Find string in buffer" },
-						},
-						f = { "<cmd>Format<cr>", "Format Code" },
+						name = "Find",
+						f = { "<cmd>Telescope find_files<cr>", "Find files" },
+						g = { "<cmd>Telescope live_grep<cr>", "Find string in files" },
+						b = { "<cmd>Telescope buffers<cr>", "Find string in buffer" },
 					},
 					g = {
 						name = "Git",
-						b = {"<cmd>Gitsigns blame<cr>", "git blame"}
+						b = { "<cmd>Gitsigns blame<cr>", "git blame" },
 					},
 					l = {
 						name = "Lazy",

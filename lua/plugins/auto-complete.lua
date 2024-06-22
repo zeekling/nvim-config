@@ -8,7 +8,7 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"neovim/nvim-lspconfig",
-			"hrsh7th/cmp-cmdline"
+			"hrsh7th/cmp-cmdline",
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -65,5 +65,15 @@ return {
 				},
 			})
 		end,
+	},
+	{
+		"nvimdev/lspsaga.nvim",
+		config = function()
+			require("lspsaga").setup({})
+		end,
+		dependencies = {
+			"nvim-treesitter/nvim-treesitter", -- optional
+			"nvim-tree/nvim-web-devicons", -- optional
+		},
 	},
 }
