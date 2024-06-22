@@ -17,18 +17,21 @@ return {
 					},
 					d = {
 						name = "dirTree",
-						s = { "<cmd>NvimTreeToggle<cr>", "show dir tree on left" },
-						c = { "<cmd>NvimTreeClose<cr>", "hidden dir tree on left" },
+						t = { "<cmd>NvimTreeToggle<cr>", "show or hidden dir tree on left" },
 					},
 					f = {
-						name = "Search,Format",
+						name = "Search,Format Code",
 						s = {
 							name = "Search",
-							f = { "<cmd>Telescope find_files<cr>", "Search file by name" },
-							g = { "<cmd>Telescope live_grep<cr>", "Grep in files" },
-							b = { "<cmd>Telescope buffers<cr>", "Grep in buffer" },
+							f = { "<cmd>Telescope find_files<cr>", "Search files" },
+							g = { "<cmd>Telescope live_grep<cr>", "Find string in files" },
+							b = { "<cmd>Telescope buffers<cr>", "Find string in buffer" },
 						},
-						f = { "<cmd>Format<cr>", "Code Format" },
+						f = { "<cmd>Format<cr>", "Format Code" },
+					},
+					g = {
+						name = "Git",
+						b = {"<cmd>Gitsigns blame<cr>", "git blame"}
 					},
 					l = {
 						name = "Lazy",
@@ -40,8 +43,7 @@ return {
 						name = "Markdown",
 						k = {
 							name = "Markdown",
-							s = { "<cmd>MarkdownPreview<cr>", "MarkdownPreview" },
-							c = { "<cmd>MarkdownPreviewStop<cr>", "MarkdownPreviewStop" },
+							p = { "<cmd>MarkdownPreview<cr>", "MarkdownPreview" },
 						},
 					},
 					s = {
@@ -61,8 +63,8 @@ return {
 							m = { "<cmd>JavaTestRunCurrentMethod<cr>", "Run current Method" },
 							v = { "<cmd>JavaTestViewLastReport<cr>", "View Last Report" },
 						},
-						m = {"<cmd>JavaRunnerRunMain<cr>", "Run main Method"},
-						p = {"<cmd>JavaProfile<cr>", "Run Java Profile"},
+						m = { "<cmd>JavaRunnerRunMain<cr>", "Run main Method" },
+						p = { "<cmd>JavaProfile<cr>", "Run Java Profile" },
 					},
 					v = {
 						name = "version",

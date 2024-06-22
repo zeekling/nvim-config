@@ -7,6 +7,8 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
+			"neovim/nvim-lspconfig",
+			"hrsh7th/cmp-cmdline"
 		},
 		config = function()
 			local cmp = require("cmp")
@@ -34,9 +36,6 @@ return {
 		end,
 	},
 	{
-		"neovim/nvim-lspconfig",
-	},
-	{
 		"nvim-treesitter/nvim-treesitter",
 		config = function()
 			require("nvim-treesitter.configs").setup({
@@ -60,6 +59,9 @@ return {
 					"vim",
 					"xml",
 					"tcl",
+					"yaml",
+					"ini",
+					"comment",
 				},
 			})
 		end,

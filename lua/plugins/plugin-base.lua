@@ -117,7 +117,9 @@ return {
 	{
 		"nvim-lualine/lualine.nvim",
 		config = function()
-			require("lualine").setup()
+			require("lualine").setup({
+				theme = "vscode",
+			})
 		end,
 	},
 	{
@@ -138,7 +140,7 @@ return {
 		tag = "v3.*",
 		config = function()
 			vim.g.termguicolors = true
-			require("bufferline").setup()
+			require("bufferline").setup({})
 		end,
 	},
 	{

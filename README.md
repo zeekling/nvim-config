@@ -14,10 +14,13 @@ git clone ssh://git@git.zeekling.cn:222/linux/nvim-config.git ~/.config/nvim
 |---- |---- |----|
 | \<space>bp |  跳转到上一个buffer | Buffer |
 | \<space>bp |  跳转到下一个buffer | Buffer |
-| \<space>ds | 在左边显示目录数 | Dir |
-| \<space>dc | 关闭左边的目录树 | Dir |
-| \<space>mks | 预览Markdown | Markdown |
-| \<space>mkc | 关闭预览Markdown | Markdown |
+| \<space>dt | 在左边显示或者关闭目录数 | Dir |
+| \<space>mkp | 预览Markdown | Markdown |
+| \<space>ff | 格式化代码 | Format |
+| \<space>fsf | 在当前目录下面查找文件。支持模糊匹配 | Search |
+| \<space>fsg | 在当前目录下的文件查找字符串 | S earch |
+| \<space>fsb | 在打开的buffer中查找字符串 | Search |
+| \<space>ls | 显示Lazy概览页面 | Lazy |
 
 ## 帮助
 
