@@ -23,8 +23,8 @@ return {
 							d = { "<cmd>Lspsaga goto_definition<cr>", "Go to definition" },
 							f = { "<cmd>Lspsaga finder<cr>", "Find usage or implements" },
 							i = { "<cmd>Lspsaga finder imp<cr>", "Find implements" },
-							r = { "<cmd>Lspsaga rename<cr>", "rename" },
 						},
+						r = { "<cmd>Lspsaga rename<cr>", "rename" },
 					},
 					d = {
 						name = "dirTree",
