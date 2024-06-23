@@ -177,11 +177,6 @@ return {
 		end,
 	},
 	{
-		"folke/trouble.nvim",
-		opts = {},
-		cmd = "Trouble",
-	},
-	{
 		"stevearc/aerial.nvim",
 		opts = {},
 		config = function()
@@ -197,5 +192,19 @@ return {
 			"nvim-treesitter/nvim-treesitter",
 			"nvim-tree/nvim-web-devicons",
 		},
+	},
+	{
+		"shellRaining/hlchunk.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			require("hlchunk").setup({
+				chunk = {
+					enable = false,
+				},
+				indent = {
+					enable = true,
+				},
+			})
+		end,
 	},
 }
