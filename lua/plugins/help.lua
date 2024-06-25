@@ -13,7 +13,8 @@ return {
 						name = "Buffer",
 						p = { "<cmd>BufferLineCyclePrev<cr>", "Go to pre buffer" },
 						n = { "<cmd>BufferLineCycleNext<cr>", "Go to next buffer" },
-						d = { "<cmd>bd<cr>", "delete current buffer" },
+						d = { "<cmd>BufferLinePickClose<cr>", "Delete selected buffer" },
+						t = { "<cmd>BufferLinePick<cr>", "Jump to the specified buffer" },
 					},
 					c = {
 						name = "Code",
