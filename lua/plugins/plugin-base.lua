@@ -185,6 +185,17 @@ return {
 					max_width = { 40, 0.2 },
 					min_width = 20,
 				},
+				filter_kind = {
+					"Class",
+					"Constructor",
+					"Enum",
+					"Function",
+					"Interface",
+					"Module",
+					"Method",
+					"Struct",
+				},
+				open_automatic = true,
 			})
 		end,
 		-- Optional dependencies
