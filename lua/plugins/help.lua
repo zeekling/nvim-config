@@ -29,7 +29,8 @@ return {
 					},
 					d = {
 						name = "dirTree",
-						t = { "<cmd>NvimTreeToggle<cr>", "show or hidden dir tree on left" },
+						t = { "<cmd>Neotree left<cr>", "show or hidden dir tree on left" },
+						p = { "<cmd>Neotree float<cr>", "Pop dir tree" },
 					},
 					f = {
 						name = "Find",
