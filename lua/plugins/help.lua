@@ -53,6 +53,7 @@ return {
 						k = {
 							name = "Markdown",
 							p = { "<cmd>MarkdownPreview<cr>", "MarkdownPreview" },
+							s = { "<cmd>MarkdownPreviewStop<cr>", "MarkdownPreviewStop" },
 						},
 					},
 					s = {
