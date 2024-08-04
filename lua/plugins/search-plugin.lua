@@ -24,11 +24,16 @@ return {
 			local telescope = require("telescope")
 			telescope.setup({
 				defaults = {
---					layout_strategy = "bottom_pane", 
+					--					layout_strategy = "bottom_pane",
 					layout_strategy = "vertical",
 					layout_config = {
-						vertical = { width = 0.9999 },
-						bottom_pane = { width = 0.99 },
+						vertical = { width = 0.85 },
+						bottom_pane = { width = 0.85 },
+					},
+					path_display = {
+						truncate = 3,
+						--smart = 3
+						--shorten = { len = 3},
 					},
 					pickers = {
 						theme = "dropdown",
