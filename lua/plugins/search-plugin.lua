@@ -4,6 +4,10 @@ return {
 		tag = "0.1.8",
 		dependencies = {
 			{
+				"nvim-telescope/telescope-live-grep-args.nvim",
+				version = "^1.0.0",
+			},
+			{
 				"nvim-lua/plenary.nvim",
 				{
 					"nvim-telescope/telescope-fzf-native.nvim",
@@ -16,22 +20,15 @@ return {
 				"nvim-tree/nvim-web-devicons",
 			},
 		},
-	},
-	{
-		"nvim-telescope/telescope.nvim",
-		dependencies = {
-			{
-				"nvim-telescope/telescope-live-grep-args.nvim",
-				version = "^1.0.0",
-			},
-		},
 		config = function()
 			local telescope = require("telescope")
 			telescope.setup({
 				defaults = {
+--					layout_strategy = "bottom_pane", 
 					layout_strategy = "vertical",
 					layout_config = {
-						vertical = { width = 0.8 },
+						vertical = { width = 0.9999 },
+						bottom_pane = { width = 0.99 },
 					},
 					pickers = {
 						theme = "dropdown",
