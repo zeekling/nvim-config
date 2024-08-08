@@ -71,7 +71,7 @@ return {
 				max_height = math.floor(vim.api.nvim_win_get_height(0) / 4),
 				-- minimum_width = 50,
 				-- ERROR > WARN > INFO > DEBUG > TRACE
-				level = "INFO",
+				level = "WARN",
 			})
 
 			vim.notify = notify
