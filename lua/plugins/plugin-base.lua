@@ -60,10 +60,10 @@ return {
 			local notify = require("notify")
 			notify.setup({
 				-- "fade", "slide", "fade_in_slide_out", "static"
-				stages = "static",
+				stages = "slide",
 				on_open = nil,
 				on_close = nil,
-				timeout = 3000,
+				timeout = 2000,
 				fps = 1,
 				render = "default",
 				background_colour = "Normal",
@@ -71,7 +71,7 @@ return {
 				max_height = math.floor(vim.api.nvim_win_get_height(0) / 4),
 				-- minimum_width = 50,
 				-- ERROR > WARN > INFO > DEBUG > TRACE
-				level = "TRACE",
+				level = "INFO",
 			})
 
 			vim.notify = notify
@@ -131,6 +131,11 @@ return {
 			"MunifTanjim/nui.nvim",
 			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
 		},
+		config = function()
+			require("neo-tree").setup({
+				popup_border_style = "rounded",
+			})
+		end,
 	},
 	{
 		"tiagovla/scope.nvim",
@@ -158,7 +163,13 @@ return {
 	},
 	{
 		"stevearc/dressing.nvim",
-		opts = {},
+		config = function()
+			require("dressing").setup({
+				input = {
+					enabled = true,
+				},
+			})
+		end,
 	},
 	{
 		"mhartington/formatter.nvim",

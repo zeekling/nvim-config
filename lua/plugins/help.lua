@@ -31,6 +31,7 @@ return {
 						name = "dirTree",
 						t = { "<cmd>Neotree left<cr>", "show or hidden dir tree on left" },
 						p = { "<cmd>Neotree float<cr>", "Pop dir tree" },
+						c = { "<cmd>Neotree current<cr>", "Open dir tree in current" },
 					},
 					f = {
 						name = "Find",
