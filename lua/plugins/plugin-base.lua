@@ -229,4 +229,8 @@ return {
 			})
 		end,
 	},
+	{
+		"felipec/vim-sanegx",
+		event = "BufRead",
+	},
 }
