@@ -24,8 +24,8 @@ return {
 			local telescope = require("telescope")
 			telescope.setup({
 				defaults = {
-					--					layout_strategy = "bottom_pane",
-					layout_strategy = "vertical",
+					layout_strategy = "bottom_pane",
+					-- 	layout_strategy = "vertical",
 					layout_config = {
 						vertical = { width = 0.85 },
 						bottom_pane = { width = 0.85 },

@@ -38,7 +38,27 @@ return {
 			java_debug_adapter = {
 				enable = true,
 			},
+			spring_boot_tools = {
+				enable = true,
+			},
+			notifications = {
+				dap = true,
+			},
 		})
-		require("lspconfig").jdtls.setup({})
+		require("lspconfig").jdtls.setup({
+			settings = {
+				java = {
+					configuration = {
+						runtimes = {
+							{
+								name = "jdk17",
+								path = "home/data/opt/bisheng-jdk-17.0.3",
+								default = true,
+							},
+						},
+					},
+				},
+			},
+		})
 	end,
 }
