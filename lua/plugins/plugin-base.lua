@@ -232,4 +232,8 @@ return {
 		"felipec/vim-sanegx",
 		event = "BufRead",
 	},
+	{
+		"folke/lazydev.nvim",
+		ft = "lua",
+	},
 }

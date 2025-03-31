@@ -29,9 +29,12 @@ return {
 					},
 					d = {
 						name = "dirTree",
-						t = { "<cmd>Neotree left<cr>", "show or hidden dir tree on left" },
-						p = { "<cmd>Neotree float<cr>", "Pop dir tree" },
-						c = { "<cmd>Neotree current<cr>", "Open dir tree in current" },
+						t = { "<cmd>Neotree float<cr>", "Pop dir tree" },
+						d = {
+							name = "Diff",
+							s = { "<cmd>DiffviewOpen<cr>", "Show diff in Current file" },
+							c = { "<cmd>DiffviewClose<cr>", "Close diff in Current file" },
+						},
 					},
 					f = {
 						name = "Find",
