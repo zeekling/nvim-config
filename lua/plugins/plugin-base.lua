@@ -142,7 +142,6 @@ return {
 	},
 	{
 		"akinsho/bufferline.nvim",
-		tag = "v3.*",
 		config = function()
 			vim.g.termguicolors = true
 			require("bufferline").setup({})
