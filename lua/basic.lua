@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 vim.o.background = "light"
+vim.o.mouse=""
 
 vim.cmd("set ignorecase")
 vim.cmd("set tabstop=4")
